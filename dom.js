@@ -146,7 +146,7 @@ function domNode(mes) {
      main.prepend(alt)
 }
 
-domNode('Food is updated!');
+//domNode('Food is updated!');
 
 function innrhtm(mgg) {
 const temp = `<div class="alert">
