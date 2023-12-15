@@ -1,0 +1,48 @@
+//cli
+ng g d directive name
+
+
+<h1 app-sample>Welcome to Angular</h1>
+
+
+
+//custom directive
+import {Directives } from @angular/core;
+
+@Directives({
+    selector:app-sample
+})
+
+export class implements Directives {
+
+    constructor(private e1:ElementRef) {
+          this.e1.style.backgroundColor = "green"  
+    }
+}
+
+
+//input decorator
+
+<input type="text" name="fullName" [pname] = "parentValue">
+
+//.ts file
+parentValue:string= "Hello";
+
+
+//child tsfile
+@Input() pname;
+
+//component file
+import { Input,Output} from @angular/core;
+
+@component({
+    selector:'app-sample',
+    template:['tempname.html'],
+    styles : ['./filename']
+})
+
+export class appComponent {
+    constructor() {
+        
+    }
+}

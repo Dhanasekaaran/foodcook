@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>JS Dom</title>
+    <link rel="stylesheet" href="dom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>Food cook
+        <a href="action.html" style="font-size:15px;padding:3px 5px">Credit</a>
+        <a href="feed.html" style="font-size:15px;padding:3px 5px">Feedback</a>
+    </header>
+    <main id="main">
+        <!-- <div class="alert">
+             <div class="alert-mes">
+                <strong>Success!</strong>          Food updated
+            </div> -->
+        <!-- <button type="button" class="alert-close">X</button> -->
+        <!--</div> -->
+        <div id="app">
+            <input type="text" placeholder="Please enter food item..." class="input-food" id="input-item">
+            <button type="button" class="btn-save" id="btn-item">save</button>
+            <div><button type="button" id="showbtn"
+                    style="float:right;margin:2px;padding:2px 0;border: none;border-radius: 6px;background-color: rgb(16, 67, 219);color:white">hide
+                    div</button></div>
+        </div>
+        <section>
+            <div id="food-container" class="food-container">
+                <div id="food-count"></div>
+                <ul class="food-item" id="food-item">
+                </ul>
+            <div id="no-list">
+                <img src="./mcdonal.png" alt="Not found" >
+                <h5 style="text-align: center;">Create your food items</h5>
+            </div>
+        </div>
+        </section>
+
+        <!-- <button type="button" id="ref">refresh</button>
+          <div id="duplicate" class="food-container">
+            
+          </div> -->
+        <!-- <div class="alert">created</div> -->
+        <style>
+            form {
+                background-color: white;
+                border-radius: 5px;
+                padding: 10px 5px;
+                margin: 10px auto;
+                text-align: center;
+            }
+
+            form>div {
+                padding: 5px 10px;
+                margin: 5px 5px;
+            }
+
+            form>div>input {
+                background-color: azure;
+                padding: 8px 10px;
+                outline: none;
+                border: 1px solid grey;
+                border-radius: 3px;
+            }
+
+            form>div>button {
+                padding: 5px 15px;
+                background-color: royalblue;
+                border: 1px solid grey;
+                border-radius: 3px;
+                color: white;
+                outline: none;
+            }
+        </style>
+        <!-- <form action="">
+            <div>
+                <input type="text" placeholder="fullname" id="fullname">
+            </div>
+            <div>
+                <input type="checkbox" id="term">
+                <label for="term">Check the <a href="http://google.com">terms</a></label>
+            </div>
+            <div>
+                <button type="submit">submit</button>
+            </div>
+          </form> -->
+        <!-- <form action="">
+            <div>
+                <ul>
+                   <li>1</li>
+                   <li>2</li>
+                   <li>3</li>
+                   <li>4</li>
+                   <li>5</li>
+                </ul>
+              </div>
+         </form> -->
+
+    </main>
+</body>
+
+<script src="dom.js">
+</script>
+
+</html>

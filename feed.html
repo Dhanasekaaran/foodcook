@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Action</title>
+</head>
+
+<body>
+    <header><span id="dynamic"></span>Food cook Planner
+        <a href="domld.html" style="font-size:15px;padding:3px 5px">Back</a>
+    </header>
+
+    <main id="">
+        <h4 style="text-align: center;font-family: 'Courier New', Courier, monospace;font-size: 20px;">FeedBack Form
+        </h4>
+        <style>
+            form {
+                background-color: white;
+                padding: 25px 20px;
+                font-size: 17px;
+                border-radius: 5px;
+                margin: 15px auto;
+            }
+
+            form * {
+                width: 100%;
+                margin: 4px 1px;
+            }
+
+            input,
+            textarea,select {
+                padding: 10px 10px;
+                border: 0.5px solid rgb(187, 181, 181);
+                border-radius: 5px;
+
+            }
+
+            input[type="submit"] {
+                padding: 10px 10px;
+                background-color: blue;
+                color: white;
+                border-radius: 5px;
+                border: none;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                width: 70px;
+            }
+
+            form label,select {
+
+                font-size: 15px;
+                color: gray;
+            }
+
+            .d-flex {
+                display: flex;
+            }
+        </style>
+
+        <form name="feedback">
+            <div>
+                <div>
+                    <input type="text" placeholder="fullname" name="fullname">
+                </div>
+                <div class="d-flex" id="typeEl">
+                    <div class="d-flex">
+                        <input type="radio" name="type" value="generalfeedback" id="general">
+                        <label for="general">Generalfeedback</label>
+                    </div>
+                    <div class="d-flex">
+                        <input type="radio" name="type" value="technicalfeedback" id="technical">
+                        <label for="technical">Technicalfeedback</label>
+                    </div>
+                    <div class="d-flex">
+                        <input type="radio" name="type" value="contribution" id="contribution">
+                        <label for="contribution">Contribution</label>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <input type="email" name="email" placeholder="you@gmail.com">
+                    </div>
+                    <div>
+                        <select name="country" id="" >
+                            <option value="">---select country</option>
+                            <option value="IND">India</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="SGP">Singapore</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="TL">Thailand</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <textarea id="" cols="10" rows="5" name="description"></textarea>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="term" id="term">
+                    <label for="term">Terms</label>
+                </div>
+                <div>
+                    <input type="submit" value="submit">
+                </div>
+            </div>
+            <div id="response"></div>
+        </form>
+
+    </main>
+</body>
+<script src="domact.js">
+</script>
+
+</html>

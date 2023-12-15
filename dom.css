@@ -1,0 +1,150 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+html,body {
+    background-color: rgb(222, 243, 250);
+}
+
+header {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px;
+    background-color: rgb(39, 39, 247);
+    color: white;
+    text-align: center;
+}
+
+header a {
+    color:white;
+    text-decoration: none;
+    border:1px solid grey;
+    background-color: rgb(153, 147, 147);
+    border-radius: 7px;
+}
+
+main {
+    width:700px;
+    margin:12px auto;
+    padding:7px;
+   
+}
+
+main > div > h1 {
+    font-size: 18px;
+}
+
+.input-food {
+    width:100%;
+    padding:5px 10px;
+    outline: none;
+    margin-right:5px ;
+    border: 1px solid ghostwhite;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+section {
+    margin:20px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(206, 203, 203);
+
+}
+
+#no-list {
+    color:gray;
+    text-align:center;
+}
+
+#no-list > img {
+    width:300px;
+    opacity: 0.5;
+}
+
+#food-count {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+.btn-save {
+    padding:7px 15px;
+    background-color: blue;
+    color:rgb(250, 245, 245);
+    border-radius: 4px;
+    border: none;
+}
+
+#app {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding:15px 10px;
+    border-radius:  6px;
+    
+}
+.food-item{
+    margin-top:25px;
+    
+}
+
+.food-container.hide {
+    height:0;
+    width:0;
+    opacity: 0;
+    background-color: grey;
+    overflow: hidden;
+
+}
+
+.food-container {
+    background-color: white;
+    border-radius:  5px;
+    padding:10px;
+    margin-top:10px;
+    transition:all 3s;
+    width:100%;
+}
+
+
+.food-list {
+    list-style: none;
+    padding:7px;
+    margin:5px;
+    font-size: 14px;
+    border:1px solid rgb(238, 237, 237);
+    color:rgb(161, 159, 159);
+    border-radius: 7px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.alert {
+    border: 1px solid rgb(223, 220, 220);
+    padding:10px 5px;
+    margin:10px auto;
+    background-color: rgb(37, 206, 37);
+    border-radius: 5px;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    border-left:5px solid green;
+}
+.fa-trash{
+    cursor:pointer;
+}
+
+.alert-close {
+    border:none;
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+}
+
